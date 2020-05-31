@@ -1,9 +1,9 @@
 <template>
   <button class="dj-button" :class="btnClass" :disabled="loading" @click="$emit('click',$event)">
     <!-- 普通icon -->
-    <zh-icon :icon="icon" v-if="icon && !loading" class="icon"></zh-icon>
+    <dj-icon :icon="icon" v-if="icon && !loading" class="icon"></dj-icon>
     <!-- loading 的icon -->
-    <zh-icon icon="loading" v-if="loading" class="icon"></zh-icon>
+    <dj-icon icon="loading" v-if="loading" class="icon"></dj-icon>
     <!-- 文本内容 -->
     <span v-if="this.$slots.default">
       <slot></slot>
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/_var.csss";
+@import "../styles/_var.scss";
 $height: 42px;
 $font-size: 16px;
 $color: #606266;

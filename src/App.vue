@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   <!-- 默认按钮 -->
+    <!-- 默认按钮 -->
     <dj-button>默认按钮</dj-button>
     <br>
     <!-- 带类型的按钮 -->
@@ -18,16 +18,23 @@
     <!-- loading按钮 -->
     <dj-button type="success" loading>加载中</dj-button>
     <br>
+    <!-- 触发事件 -->
+    <dj-button type="success" @click="fn">触发事件</dj-button>
+    <br>
+
+    <dj-icon icon="sousuo"></dj-icon>
+    <dj-icon icon="edit"></dj-icon>
+    <br>
   </div>
 </template>
 
 <script>
-
-
 export default {
   name: 'App',
+  methods:{
+    fn(e){
+      console.log(e)
+    }
+  }
 }
 </script>
-
-<style lang="scss">
-</style>

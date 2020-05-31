@@ -6,7 +6,7 @@ import Icon from './icon.vue';
 const install = (Vue) =>{
     Vue.component(Button.name,Button)
     Vue.component(Icon.name,Icon)
-
+    
 }
 
 // 有可能组件会通过script标签的方式引入 
